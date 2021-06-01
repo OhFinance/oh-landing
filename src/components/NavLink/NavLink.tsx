@@ -43,7 +43,6 @@ export const NavLink: React.FC<NavLinkProps> = ({
   const [active, setActive] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log(location.pathname);
     if (location.pathname === path) {
       setActive(true);
     } else {
