@@ -4,7 +4,6 @@ import { Footer } from "components/Footer";
 import { NavBar } from "components/NavBar";
 import { Landing } from "views/Landing";
 import { NoMatch } from "views/NoMatch";
-import { About } from "views/About";
 import { Contact } from "views/Contact";
 import { Terms } from "views/Terms";
 
@@ -16,7 +15,6 @@ const App = () => {
       <Box my={4}>
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/terms" component={Terms} />
           <Route component={NoMatch} />

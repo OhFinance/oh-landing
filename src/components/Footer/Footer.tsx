@@ -46,7 +46,7 @@ export const Footer = () => {
               </Flex>
             </Grid>
 
-            <Grid item>
+            {/* <Grid item>
               <Typography>
                 <Link
                   className={classes.link}
@@ -56,7 +56,7 @@ export const Footer = () => {
                   About
                 </Link>
               </Typography>
-            </Grid>
+            </Grid> */}
             <Grid item>
               <Typography>
                 <Link
@@ -82,7 +82,7 @@ export const Footer = () => {
               </Typography>
             </Grid>
 
-            {/* <Grid item>
+            <Grid item>
               <Typography>
                 <Link
                   className={classes.link}
@@ -91,10 +91,10 @@ export const Footer = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Documentation
+                  Docs
                 </Link>
               </Typography>
-            </Grid> */}
+            </Grid>
             <Grid item>
               <Typography>
                 <Link

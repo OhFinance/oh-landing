@@ -46,9 +46,9 @@ export const MobileMenu = () => {
               />
             </Flex>
             <List>
-              <ListItem button divider onClick={() => handleClick("/about")}>
+              {/* <ListItem button divider onClick={() => handleClick("/about")}>
                 <ListItemText>About</ListItemText>
-              </ListItem>
+              </ListItem> */}
 
               <ListItem
                 button
@@ -59,6 +59,16 @@ export const MobileMenu = () => {
                 target="_blank"
               >
                 <ListItemText>Blog</ListItemText>
+              </ListItem>
+              <ListItem
+                button
+                component="a"
+                rel="noopener noreferrer"
+                divider
+                href={urls.docs}
+                target="_blank"
+              >
+                <ListItemText>Docs</ListItemText>
               </ListItem>
             </List>
             <Button

@@ -7,22 +7,24 @@ import { AboutStrategyRow } from "./components/AboutStrategyRow";
 
 export const About = () => {
   return (
-    <Flex column>
-      <Container>
+    // <Flex column>
+    <Container>
+      <Box mt={16}>
         <AboutSplash />
+      </Box>
 
-        <Box mt={8}>
-          <AboutFeatureRow />
-        </Box>
+      <Box mt={8}>
+        <AboutFeatureRow />
+      </Box>
 
-        <Box mt={16}>
-          <AboutStrategyRow />
-        </Box>
+      <Box mt={16}>
+        <AboutStrategyRow />
+      </Box>
 
-        <Box mt={16}>
-          <AboutFlywheelRow />
-        </Box>
-      </Container>
-    </Flex>
+      <Box mt={16}>
+        <AboutFlywheelRow />
+      </Box>
+    </Container>
+    // </Flex>
   );
 };

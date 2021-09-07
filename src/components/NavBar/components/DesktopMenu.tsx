@@ -5,15 +5,15 @@ import { urls } from "urls";
 export const DesktopMenu = () => {
   return (
     <Grid container alignItems="center" spacing={4}>
-      <Grid item>
+      {/* <Grid item>
         <NavLink title="About" path="/about" />
-      </Grid>
+      </Grid> */}
       <Grid item>
         <NavLink title="Blog" url={urls.medium} />
       </Grid>
-      {/* <Grid item>
-        <NavLink title="Documentation" url={urls.docs} />
-      </Grid> */}
+      <Grid item>
+        <NavLink title="Docs" url={urls.docs} />
+      </Grid>
       <Grid item>
         {/* <Button size="large" color="primary" variant="contained">
           Launch App

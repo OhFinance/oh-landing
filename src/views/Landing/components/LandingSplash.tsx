@@ -19,7 +19,7 @@ export const LandingSplash = () => {
         </b>
       </Typography>
       <Typography variant="subtitle1" align="center" paragraph>
-        Oh! Finance offers optimized yield-generating products, focused on
+        Oh! Finance is an optimized yield-generation protocol, focused on
         reducing risk and increasing volume exposure. Start earning{" "}
         <Box component="span" color="secondary.main">
           <b>industry-leading interest rates</b>
@@ -67,12 +67,6 @@ export const LandingSplash = () => {
           height="auto"
         />
       </Flex>
-
-      <Box my={6}>
-        <Typography variant="h4" color="secondary" align="center" paragraph>
-          <b>Fight back with the future of money</b>
-        </Typography>
-      </Box>
     </Container>
   );
 };
