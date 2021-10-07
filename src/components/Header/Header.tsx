@@ -6,11 +6,11 @@ import {
   useMediaQuery,
   useTheme,
 } from "@material-ui/core";
-import { NavLink } from "../NavLink";
-import { MobileMenu } from "./components/MobileMenu";
+import { MobileMenu } from "./components/MobileMenu/MobileMenu";
 import { DesktopMenu } from "./components/DesktopMenu";
 import OhTitle from "assets/img/oh-title.png";
 import { Flex } from "@ohfinance/oh-ui";
+import { HeaderLink } from "./components/HeaderLink";
 
 const useStyles = makeStyles((theme) => ({
   image: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const NavBar = () => {
+export const Header = () => {
   const classes = useStyles();
   const theme = useTheme();
   const mobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -32,9 +32,9 @@ export const NavBar = () => {
           <Grid item>
             <Flex align="center">
               {mobile && <MobileMenu />}
-              <NavLink path="/">
+              <HeaderLink path="/">
                 <img src={OhTitle} alt="oh-logo" className={classes.image} />
-              </NavLink>
+              </HeaderLink>
             </Flex>
           </Grid>
           {!mobile && (

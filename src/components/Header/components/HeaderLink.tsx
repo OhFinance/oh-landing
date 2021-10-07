@@ -2,12 +2,6 @@ import { Box, makeStyles, Typography } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 
-interface NavLinkProps {
-  title?: string;
-  url?: string;
-  path?: string;
-}
-
 const useStyles = makeStyles((theme) => ({
   hover: {
     cursor: "pointer",
@@ -30,7 +24,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const NavLink: React.FC<NavLinkProps> = ({
+export interface HeaderLinkProps {
+  title?: string;
+  url?: string;
+  path?: string;
+}
+
+export const HeaderLink: React.FC<HeaderLinkProps> = ({
   path,
   title,
   url,

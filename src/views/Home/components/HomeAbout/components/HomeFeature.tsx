@@ -1,15 +1,14 @@
 import { Box, Typography } from "@material-ui/core";
-import { Flex } from "@ohfinance/oh-ui";
-import React from "react";
+import { Flex, Text } from "@ohfinance/oh-ui";
 
-interface AboutFeatureProps {
+export interface HomeFeatureProps {
   img: string;
   alt: string;
   title: string;
   subtitle: string;
 }
 
-export const AboutFeature: React.FC<AboutFeatureProps> = ({
+export const HomeFeature: React.FC<HomeFeatureProps> = ({
   img,
   alt,
   title,
@@ -23,7 +22,7 @@ export const AboutFeature: React.FC<AboutFeatureProps> = ({
       <Typography variant="h6" gutterBottom>
         <b>{title}</b>
       </Typography>
-      <Typography align="center">{subtitle}</Typography>
+      <Text align="center">{subtitle}</Text>
     </Flex>
   );
 };

@@ -1,17 +1,12 @@
-import React from "react";
-import { CssBaseline, ThemeProvider } from "@material-ui/core";
-import { OhLightTheme } from "@ohfinance/oh-ui";
-import { VersionProvider } from "@ohfinance/oh-ui";
-import { version } from "../package.json";
+import { HelmetProvider } from "react-helmet-async";
+import { ThemeProvider } from "@ohfinance/oh-ui";
+import { FC } from "react";
 
-const Providers: React.FC = ({ children }) => {
+const Providers: FC = ({ children }) => {
   return (
-    <VersionProvider version={version}>
-      <ThemeProvider theme={OhLightTheme}>
-        <CssBaseline />
-        {children}
-      </ThemeProvider>
-    </VersionProvider>
+    <HelmetProvider>
+      <ThemeProvider>{children}</ThemeProvider>
+    </HelmetProvider>
   );
 };
 

@@ -1,18 +1,15 @@
+import { Grid, makeStyles, Toolbar } from "@material-ui/core";
 import {
-  Grid,
-  Link,
-  makeStyles,
-  Toolbar,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from "@material-ui/core";
-import { Flex } from "@ohfinance/oh-ui";
-import { TelegramButton, TwitterButton } from "components/MediaButtons";
+  DOCS_URL,
+  Flex,
+  MediumButton,
+  MEDIUM_URL,
+  TwitterButton,
+} from "@ohfinance/oh-ui";
 import OhLogo from "assets/img/oh-logo-dark.png";
 import { useHistory } from "react-router";
-import { urls } from "urls";
 import { useMobile } from "@ohfinance/oh-ui";
+import { FooterLink } from "./component/FooterLink";
 
 const useStyles = makeStyles((theme) => ({
   link: {
@@ -46,85 +43,31 @@ export const Footer = () => {
               </Flex>
             </Grid>
 
-            {/* <Grid item>
-              <Typography>
-                <Link
-                  className={classes.link}
-                  color="textPrimary"
-                  onClick={() => history.push("/about")}
-                >
-                  About
-                </Link>
-              </Typography>
-            </Grid> */}
             <Grid item>
-              <Typography>
-                <Link
-                  className={classes.link}
-                  color="textPrimary"
-                  href={urls.medium}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Blog
-                </Link>
-              </Typography>
+              <FooterLink href={MEDIUM_URL}>Blog</FooterLink>
             </Grid>
             <Grid item>
-              <Typography>
-                <Link
-                  className={classes.link}
-                  color="textPrimary"
-                  onClick={() => history.push("/contact")}
-                >
-                  Contact
-                </Link>
-              </Typography>
-            </Grid>
-
-            <Grid item>
-              <Typography>
-                <Link
-                  className={classes.link}
-                  color="textPrimary"
-                  href={urls.docs}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Docs
-                </Link>
-              </Typography>
+              <FooterLink onClick={() => history.push("/contact")}>
+                Contact
+              </FooterLink>
             </Grid>
             <Grid item>
-              <Typography>
-                <Link
-                  className={classes.link}
-                  color="textPrimary"
-                  onClick={() => history.push("/")}
-                >
-                  Home
-                </Link>
-              </Typography>
+              <FooterLink href={DOCS_URL}>Docs</FooterLink>
             </Grid>
             <Grid item>
-              <Typography>
-                <Link
-                  className={classes.link}
-                  color="textPrimary"
-                  onClick={() => history.push("/terms")}
-                >
-                  Terms
-                </Link>
-              </Typography>
+              <FooterLink onClick={() => history.push("/")}>Home</FooterLink>
+            </Grid>
+            <Grid item>
+              <FooterLink onClick={() => history.push("/terms")}>
+                Terms
+              </FooterLink>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
           <Flex align="center" justify={mobile ? "center" : "flex-end"}>
             <TwitterButton />
-            <TelegramButton />
-
-            {/* <DiscordButton /> */}
+            <MediumButton />
           </Flex>
         </Grid>
       </Grid>

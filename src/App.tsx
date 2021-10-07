@@ -1,28 +1,36 @@
-import { Box } from "@material-ui/core";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Box, Container } from "@material-ui/core";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Footer } from "components/Footer";
-import { NavBar } from "components/NavBar";
-import { Landing } from "views/Landing";
+import { Home } from "views/Home";
 import { NoMatch } from "views/NoMatch";
 import { Contact } from "views/Contact";
 import { Terms } from "views/Terms";
+import { Header } from "components/Header";
+import { Particles } from "components/Particles";
 
 const App = () => {
   return (
-    <Router basename="/">
-      <NavBar />
+    <Container>
+      <BrowserRouter>
+        <Particles />
 
-      <Box my={4}>
-        <Switch>
-          <Route exact path="/" component={Landing} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/terms" component={Terms} />
-          <Route component={NoMatch} />
-        </Switch>
-      </Box>
+        <Header />
+        <Box my={4}>
+          <Switch>
+            {/* Home Page */}
+            <Route exact path="/" component={Home} />
 
-      <Footer />
-    </Router>
+            {/* Routes */}
+            <Route path="/contact" component={Contact} />
+            <Route path="/terms" component={Terms} />
+
+            {/* 404 */}
+            <Route component={NoMatch} />
+          </Switch>
+        </Box>
+        <Footer />
+      </BrowserRouter>
+    </Container>
   );
 };
 
