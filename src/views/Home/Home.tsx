@@ -14,7 +14,7 @@ export const Home = () => {
 
       {/* <Box my={16}> */}
       <Heading color="secondary" align="center">
-        <b>Fight back with the future of money</b>
+        <b>Fight Back with the Future of Money</b>
       </Heading>
       {/* </Box> */}
     </Display>

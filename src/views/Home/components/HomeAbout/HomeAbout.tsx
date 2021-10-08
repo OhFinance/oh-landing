@@ -24,7 +24,7 @@ export const HomeAbout = () => {
               align={mobile ? "center" : "left"}
             >
               <b>
-                Defi Made{" "}
+                DeFi Made{" "}
                 <Box component="span" color="secondary.main">
                   Easier
                 </Box>

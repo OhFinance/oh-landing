@@ -17,9 +17,9 @@ export const HomeFlywheel = () => {
         <Grid item xs={12} md={8}>
           <Title align="center">
             <b>
-              Defi Done{" "}
+              DeFi Designed{" "}
               <Box component="span" color="secondary.main">
-                Better
+                Smarter
               </Box>
             </b>
           </Title>

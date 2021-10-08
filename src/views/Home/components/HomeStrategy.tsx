@@ -17,9 +17,9 @@ export const HomeStrategy = () => {
         <Grid item xs={12} md={4}>
           <Title align={mobile ? "center" : "left"}>
             <b>
-              Defi Designed{" "}
+              DeFi Done{" "}
               <Box component="span" color="secondary.main">
-                Smarter
+                Better
               </Box>
             </b>
           </Title>
