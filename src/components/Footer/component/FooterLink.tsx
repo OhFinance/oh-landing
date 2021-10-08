@@ -1,4 +1,5 @@
-import { makeStyles, Typography, Link } from "@material-ui/core";
+import { makeStyles, Link } from "@material-ui/core";
+import { Text } from "@ohfinance/oh-ui";
 import { FC } from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,7 +21,7 @@ export const FooterLink: FC<FooterLinkProps> = ({
   const classes = useStyles();
 
   return (
-    <Typography>
+    <Text>
       <Link
         className={classes.link}
         color="textPrimary"
@@ -31,6 +32,6 @@ export const FooterLink: FC<FooterLinkProps> = ({
       >
         {children}
       </Link>
-    </Typography>
+    </Text>
   );
 };

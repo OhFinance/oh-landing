@@ -1,5 +1,5 @@
-import { Box, Typography } from "@material-ui/core";
-import { Flex, Text } from "@ohfinance/oh-ui";
+import { Box } from "@material-ui/core";
+import { Flex, Subheading, Text } from "@ohfinance/oh-ui";
 
 export interface HomeFeatureProps {
   img: string;
@@ -19,9 +19,9 @@ export const HomeFeature: React.FC<HomeFeatureProps> = ({
       <Box mb={2}>
         <img src={img} alt={alt} width="100px" height="auto" />
       </Box>
-      <Typography variant="h6" gutterBottom>
+      <Subheading>
         <b>{title}</b>
-      </Typography>
+      </Subheading>
       <Text align="center">{subtitle}</Text>
     </Flex>
   );

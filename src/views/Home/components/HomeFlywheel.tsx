@@ -1,5 +1,5 @@
-import { Grid, Typography } from "@material-ui/core";
-import { Display, Flex, useMobile } from "@ohfinance/oh-ui";
+import { Box, Grid } from "@material-ui/core";
+import { Display, Flex, Subtitle, Title, useMobile } from "@ohfinance/oh-ui";
 import OhFlywheel from "assets/img/oh-flywheel.png";
 
 export const HomeFlywheel = () => {
@@ -15,16 +15,21 @@ export const HomeFlywheel = () => {
         spacing={2}
       >
         <Grid item xs={12} md={8}>
-          <Typography variant="h3" align="center" gutterBottom>
-            <b>Value Flywheel</b>
-          </Typography>
-          <Typography variant="subtitle1" align="center" paragraph>
+          <Title align="center">
+            <b>
+              Defi Done{" "}
+              <Box component="span" color="secondary.main">
+                Better
+              </Box>
+            </b>
+          </Title>
+          <Subtitle align="center">
             Users deposit funds to earn APY and get rewarded with Oh! Finance
             Governance Tokens. As a result, the protocol earns more revenue on
             investment strategies. Protocol revenue is then used to buyback and
             burn Oh! Finance Governance Tokens, effectively passing value back
             to shareholders.
-          </Typography>
+          </Subtitle>
         </Grid>
         <Grid item xs={12} md={8}>
           <Flex center>

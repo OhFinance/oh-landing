@@ -1,5 +1,11 @@
-import { Box, Button, Grid, Typography } from "@material-ui/core";
-import { Display, Flex, Heading, PITCH_DECK_URL } from "@ohfinance/oh-ui";
+import { Box, Button, Grid } from "@material-ui/core";
+import {
+  Display,
+  Flex,
+  Heading,
+  PITCH_DECK_URL,
+  Subtitle,
+} from "@ohfinance/oh-ui";
 import DeFiDollar from "assets/img/defi-dollar.png";
 import { useMobile } from "@ohfinance/oh-ui";
 import { HomeFeatureGrid } from "./components/HomeFeatureGrid";
@@ -18,20 +24,16 @@ export const HomeAbout = () => {
               align={mobile ? "center" : "left"}
             >
               <b>
-                Defi Done{" "}
+                Defi Made{" "}
                 <Box component="span" color="secondary.main">
-                  Better
+                  Easier
                 </Box>
               </b>
             </Heading>
-            <Typography
-              variant="subtitle1"
-              paragraph
-              align={mobile ? "center" : "left"}
-            >
+            <Subtitle align={mobile ? "center" : "left"}>
               Oh! Finance aggregates popular DeFi investment strategies and
               automatically compounds your earnings.
-            </Typography>
+            </Subtitle>
             <Flex justify={mobile ? "center" : "flex-start"}>
               <Button
                 variant="contained"

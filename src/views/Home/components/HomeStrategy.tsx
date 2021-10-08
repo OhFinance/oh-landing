@@ -1,5 +1,5 @@
-import { Grid, Typography } from "@material-ui/core";
-import { Display, Flex } from "@ohfinance/oh-ui";
+import { Box, Grid } from "@material-ui/core";
+import { Display, Flex, Subtitle, Title } from "@ohfinance/oh-ui";
 import OhStrategy from "assets/img/oh-strategy.png";
 import { useMobile } from "@ohfinance/oh-ui";
 
@@ -15,24 +15,21 @@ export const HomeStrategy = () => {
           </Flex>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Typography
-            variant="h3"
-            align={mobile ? "center" : "left"}
-            gutterBottom
-          >
-            <b>Yield Index</b>
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align={mobile ? "center" : "left"}
-            paragraph
-          >
+          <Title align={mobile ? "center" : "left"}>
+            <b>
+              Defi Designed{" "}
+              <Box component="span" color="secondary.main">
+                Smarter
+              </Box>
+            </b>
+          </Title>
+          <Subtitle align={mobile ? "center" : "left"}>
             Volume across DeFi markets is not consistent, it moves according to
             market conditions and underlying funding. Risk is not consistent
             either, as protocols can accomplish similar results with different
             processes. Gain exposure to a managed index of DeFi strategies,
             designed to increase volume exposure and reduce Smart Contract risk.
-          </Typography>
+          </Subtitle>
         </Grid>
       </Grid>
     </Display>

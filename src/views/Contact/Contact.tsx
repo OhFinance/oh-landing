@@ -15,13 +15,14 @@ import {
 } from "@ohfinance/oh-ui";
 import { FaEnvelope, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import OhBrand from "assets/img/oh-title-color.png";
+import { Footer } from "components/Footer";
 // import version from "../../../package.json";
 
 export const Contact = () => {
   const mobile = useMobile();
 
   return (
-    <Display center offset>
+    <Flex center grow>
       <Container maxWidth="md">
         <Typography variant="h3" align="center" gutterBottom>
           <b>Contact Us</b>
@@ -33,7 +34,7 @@ export const Contact = () => {
                 <FaEnvelope fontSize={32} />
               </ListItemIcon>
               <ListItemText>
-                <a href="hello@oh.finance">hello@oh.finance</a>
+                <a href="#">hello@oh.finance</a>
               </ListItemText>
             </ListItem>
             <ListItem>
@@ -74,6 +75,6 @@ export const Contact = () => {
         Site Version: v{version}
       </Typography> */}
       </Container>
-    </Display>
+    </Flex>
   );
 };

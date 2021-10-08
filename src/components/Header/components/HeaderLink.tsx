@@ -1,4 +1,5 @@
 import { Box, makeStyles, Typography } from "@material-ui/core";
+import { Flex } from "@ohfinance/oh-ui";
 import { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 
@@ -60,7 +61,9 @@ export const HeaderLink: React.FC<HeaderLinkProps> = ({
   return (
     <Box className={classes.hover}>
       {children && path && (
-        <Box onClick={() => history.push(path)}>{children}</Box>
+        <Flex center onClick={() => history.push(path)}>
+          {children}
+        </Flex>
       )}
       {title && path && (
         <Typography

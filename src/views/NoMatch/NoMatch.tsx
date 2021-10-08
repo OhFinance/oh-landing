@@ -1,5 +1,6 @@
 import { Button, Typography } from "@material-ui/core";
-import { Display } from "@ohfinance/oh-ui";
+import { Display, Flex, Heading } from "@ohfinance/oh-ui";
+import { AppBrand } from "components/AppBrand";
 import { FaHome } from "react-icons/fa";
 import { useHistory } from "react-router";
 
@@ -7,10 +8,12 @@ export const NoMatch = () => {
   const history = useHistory();
 
   return (
-    <Display center column>
-      <Typography align="center" variant="h4" gutterBottom>
-        Page Not Found
-      </Typography>
+    <Flex center column grow>
+      <Flex my={2}>
+        <AppBrand />
+      </Flex>
+
+      <Heading align="center">Page Not Found</Heading>
 
       <Button
         variant="contained"
@@ -19,6 +22,6 @@ export const NoMatch = () => {
       >
         Return Home
       </Button>
-    </Display>
+    </Flex>
   );
 };
