@@ -28,12 +28,7 @@ export const Header = () => {
   return (
     <AppBar color="transparent" elevation={0} position="static">
       <Toolbar disableGutters>
-        <Grid
-          container
-          justify="space-between"
-          alignItems="center"
-          // style={{ paddingTop: `8px` }}
-        >
+        <Grid container justify="space-between" alignItems="center">
           <Grid item>
             <Flex align="center">
               {mobile && <MobileMenu />}

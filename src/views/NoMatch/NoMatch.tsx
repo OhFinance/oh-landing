@@ -1,5 +1,5 @@
-import { Button, Typography } from "@material-ui/core";
-import { Display, Flex, Heading } from "@ohfinance/oh-ui";
+import { Button } from "@material-ui/core";
+import { Flex, Heading } from "@ohfinance/oh-ui";
 import { AppBrand } from "components/AppBrand";
 import { FaHome } from "react-icons/fa";
 import { useHistory } from "react-router";

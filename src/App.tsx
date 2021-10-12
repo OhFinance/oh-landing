@@ -9,7 +9,6 @@ import { ScrollManager } from "@ohfinance/oh-ui";
 const App = () => {
   return (
     <BrowserRouter>
-      <ScrollManager />
       <AppContainer>
         <Switch>
           {/* Home Page */}
@@ -23,6 +22,8 @@ const App = () => {
           <Route component={NoMatch} />
         </Switch>
       </AppContainer>
+
+      <ScrollManager />
     </BrowserRouter>
   );
 };
