@@ -2,13 +2,15 @@ import { Box, Button, Container, Grid } from "@material-ui/core";
 import {
   Display,
   Flex,
-  MediumButton,
+  IconButton,
+  MEDIUM_URL,
   PITCH_DECK_URL,
   Subtitle,
   Title,
-  TwitterButton,
+  TWITTER_URL,
 } from "@ohfinance/oh-ui";
 import { AppBrand } from "components/AppBrand";
+import { FaMediumM, FaTwitter } from "react-icons/fa";
 
 export const HomeDisplay = () => {
   return (
@@ -52,10 +54,14 @@ export const HomeDisplay = () => {
 
         <Grid container spacing={2} justify="center">
           <Grid item>
-            <TwitterButton />
+            <IconButton href={TWITTER_URL}>
+              <FaTwitter size="32px" />
+            </IconButton>
           </Grid>
           <Grid item>
-            <MediumButton />
+            <IconButton href={MEDIUM_URL}>
+              <FaMediumM size="32px" />
+            </IconButton>
           </Grid>
         </Grid>
       </Container>

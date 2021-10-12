@@ -12,11 +12,10 @@ import {
   IconButton,
   MEDIUM_URL,
   PITCH_DECK_URL,
-  TelegramButton,
-  TwitterButton,
+  TWITTER_URL,
 } from "@ohfinance/oh-ui";
 import { Fragment, useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaMediumM, FaTwitter } from "react-icons/fa";
 import OhLogo from "assets/img/oh-logo-color.png";
 import { MobileMenuItem } from "./components/MobileMenuItem";
 
@@ -55,8 +54,12 @@ export const MobileMenu = () => {
           </Box>
           <Box>
             <Flex center>
-              <TwitterButton />
-              <TelegramButton />
+              <IconButton href={TWITTER_URL}>
+                <FaTwitter size="32px" />
+              </IconButton>
+              <IconButton href={MEDIUM_URL}>
+                <FaMediumM size="32px" />
+              </IconButton>
             </Flex>
           </Box>
         </Flex>

@@ -3,16 +3,14 @@ import {
   DOCS_URL,
   Flex,
   IconButton,
-  MediumButton,
   MEDIUM_URL,
-  TwitterButton,
   TWITTER_URL,
 } from "@ohfinance/oh-ui";
 import OhLogo from "assets/img/oh-logo-dark.png";
 import { useHistory } from "react-router";
 import { useMobile } from "@ohfinance/oh-ui";
 import { FooterLink } from "./component/FooterLink";
-import { FaTwitter } from "react-icons/fa";
+import { FaMediumM, FaTwitter } from "react-icons/fa";
 
 const useStyles = makeStyles((theme) => ({
   link: {
@@ -69,8 +67,12 @@ export const Footer = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Flex align="center" justify={mobile ? "center" : "flex-end"}>
-            <TwitterButton />
-            <MediumButton />
+            <IconButton href={TWITTER_URL}>
+              <FaTwitter size="32px" />
+            </IconButton>
+            <IconButton href={MEDIUM_URL}>
+              <FaMediumM size="32px" />
+            </IconButton>
           </Flex>
         </Grid>
       </Grid>
