@@ -11,11 +11,10 @@ import {
   useMobile,
   TELEGRAM_URL,
   TWITTER_URL,
-  Display,
+  OH_TITLE_COLOR_URL,
 } from "@ohfinance/oh-ui";
 import { FaEnvelope, FaTelegramPlane, FaTwitter } from "react-icons/fa";
-import OhBrand from "assets/img/oh-title-color.png";
-import { Footer } from "components/Footer";
+import { AppBrand } from "components/AppBrand";
 // import version from "../../../package.json";
 
 export const Contact = () => {
@@ -65,9 +64,9 @@ export const Contact = () => {
         </Flex>
         <Flex center my={4}>
           <img
-            src={OhBrand}
-            alt="oh-finance-brand"
-            width={mobile ? "300px" : "500px"}
+            src={OH_TITLE_COLOR_URL}
+            alt="oh-finance-title"
+            width={mobile ? "250px" : "500px"}
             height="auto"
           />
         </Flex>

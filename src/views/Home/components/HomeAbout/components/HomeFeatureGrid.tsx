@@ -1,15 +1,13 @@
 import { Grid } from "@material-ui/core";
-import Simple from "assets/img/simple.png";
-import Trustless from "assets/img/trustless.png";
-import NonCustodial from "assets/img/non-custodial.png";
 import { HomeFeature } from "./HomeFeature";
+import { NON_CUSTODIAL_URL, SIMPLE_URL, TRUSTLESS_URL } from "@ohfinance/oh-ui";
 
 export const HomeFeatureGrid = () => {
   return (
-    <Grid container alignItems="center" justify="center" spacing={2}>
+    <Grid container alignItems="center" justify="center" spacing={4}>
       <Grid item xs={12} md={3}>
         <HomeFeature
-          img={Trustless}
+          img={TRUSTLESS_URL}
           alt="intelligent"
           title="Intelligent Auto-Compounding"
           subtitle="Auto-compound earnings to maximize underlying returns"
@@ -17,7 +15,7 @@ export const HomeFeatureGrid = () => {
       </Grid>
       <Grid item xs={12} md={3}>
         <HomeFeature
-          img={Simple}
+          img={SIMPLE_URL}
           alt="optimized"
           title="Gas Optimization"
           subtitle="Save on transaction fees by using optimized Smart Contracts"
@@ -25,7 +23,7 @@ export const HomeFeatureGrid = () => {
       </Grid>
       <Grid item xs={12} md={3}>
         <HomeFeature
-          img={NonCustodial}
+          img={NON_CUSTODIAL_URL}
           alt="seamless"
           title="Seamless Fund Management"
           subtitle="Easily gain managed exposure to the most well-known DeFi protocols"

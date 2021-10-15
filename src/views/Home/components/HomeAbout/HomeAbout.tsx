@@ -1,12 +1,12 @@
 import { Box, Button, Grid } from "@material-ui/core";
 import {
+  DEFI_DOLLAR_URL,
   Display,
   Flex,
   Heading,
   PITCH_DECK_URL,
   Subtitle,
 } from "@ohfinance/oh-ui";
-import DeFiDollar from "assets/img/defi-dollar.png";
 import { useMobile } from "@ohfinance/oh-ui";
 import { HomeFeatureGrid } from "./components/HomeFeatureGrid";
 
@@ -15,8 +15,8 @@ export const HomeAbout = () => {
 
   return (
     <Display center>
-      <Flex column>
-        <Grid container alignItems="center" justify="center">
+      <Box mb={4}>
+        <Grid container alignItems="center" justifyContent="center">
           <Grid item xs={12} md={4}>
             <Heading
               variant="h3"
@@ -48,13 +48,17 @@ export const HomeAbout = () => {
           </Grid>
           <Grid item xs={12} md={4}>
             <Flex justify={mobile ? "center" : "flex-end"} align="center">
-              <img src={DeFiDollar} alt="ohfinance-brand" width={300} />
+              <img
+                src={DEFI_DOLLAR_URL}
+                alt="ohfinance-brand"
+                width={300}
+                height="auto"
+              />
             </Flex>
           </Grid>
         </Grid>
-
-        <HomeFeatureGrid />
-      </Flex>
+      </Box>
+      <HomeFeatureGrid />
     </Display>
   );
 };

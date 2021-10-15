@@ -1,6 +1,12 @@
 import { Box, Grid } from "@material-ui/core";
-import { Display, Flex, Subtitle, Title, useMobile } from "@ohfinance/oh-ui";
-import OhFlywheel from "assets/img/oh-flywheel.png";
+import {
+  Display,
+  Flex,
+  OH_FLYWHEEL_URL,
+  Subtitle,
+  Title,
+  useMobile,
+} from "@ohfinance/oh-ui";
 
 export const HomeFlywheel = () => {
   const mobile = useMobile();
@@ -12,7 +18,7 @@ export const HomeFlywheel = () => {
         direction="column"
         alignItems="center"
         justify="center"
-        spacing={2}
+        spacing={4}
       >
         <Grid item xs={12} md={8}>
           <Title align="center">
@@ -34,9 +40,9 @@ export const HomeFlywheel = () => {
         <Grid item xs={12} md={8}>
           <Flex center>
             <img
-              src={OhFlywheel}
+              src={OH_FLYWHEEL_URL}
               alt="oh-flywheel"
-              width={mobile ? 300 : 500}
+              width={mobile ? 250 : 500}
             />
           </Flex>
         </Grid>

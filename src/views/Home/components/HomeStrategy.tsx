@@ -1,6 +1,11 @@
 import { Box, Grid } from "@material-ui/core";
-import { Display, Flex, Subtitle, Title } from "@ohfinance/oh-ui";
-import OhStrategy from "assets/img/oh-strategy.png";
+import {
+  Display,
+  Flex,
+  OH_STRATEGY_URL,
+  Subtitle,
+  Title,
+} from "@ohfinance/oh-ui";
 import { useMobile } from "@ohfinance/oh-ui";
 
 export const HomeStrategy = () => {
@@ -8,10 +13,15 @@ export const HomeStrategy = () => {
 
   return (
     <Display center column>
-      <Grid container alignItems="center" justify="center" spacing={2}>
+      <Grid container alignItems="center" justify="center" spacing={4}>
         <Grid item xs={12} md={4}>
           <Flex justify={mobile ? "center" : "flex-start"} align="center">
-            <img src={OhStrategy} alt="oh-strategy" width={300} />
+            <img
+              src={OH_STRATEGY_URL}
+              alt="oh-strategy"
+              width={300}
+              height="auto"
+            />
           </Flex>
         </Grid>
         <Grid item xs={12} md={4}>

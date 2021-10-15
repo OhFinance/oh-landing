@@ -8,8 +8,7 @@ import {
 } from "@material-ui/core";
 import { MobileMenu } from "./components/MobileMenu/MobileMenu";
 import { DesktopMenu } from "./components/DesktopMenu";
-import OhTitle from "assets/img/oh-title.png";
-import { Flex } from "@ohfinance/oh-ui";
+import { Flex, OH_TITLE_URL } from "@ohfinance/oh-ui";
 import { HeaderLink } from "./components/HeaderLink";
 
 const useStyles = makeStyles((theme) => ({
@@ -33,7 +32,11 @@ export const Header = () => {
             <Flex align="center">
               {mobile && <MobileMenu />}
               <HeaderLink path="/">
-                <img src={OhTitle} alt="oh-logo" className={classes.image} />
+                <img
+                  src={OH_TITLE_URL}
+                  alt="oh-logo"
+                  className={classes.image}
+                />
               </HeaderLink>
             </Flex>
           </Grid>

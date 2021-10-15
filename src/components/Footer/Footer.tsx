@@ -4,9 +4,9 @@ import {
   Flex,
   IconButton,
   MEDIUM_URL,
+  OH_LOGO_DARK_URL,
   TWITTER_URL,
 } from "@ohfinance/oh-ui";
-import OhLogo from "assets/img/oh-logo-dark.png";
 import { useHistory } from "react-router";
 import { useMobile } from "@ohfinance/oh-ui";
 import { FooterLink } from "./component/FooterLink";
@@ -40,7 +40,11 @@ export const Footer = () => {
           >
             <Grid item xs={12} md={2}>
               <Flex center>
-                <img src={OhLogo} alt="oh-logo" className={classes.image} />
+                <img
+                  src={OH_LOGO_DARK_URL}
+                  alt="oh-logo"
+                  className={classes.image}
+                />
               </Flex>
             </Grid>
 

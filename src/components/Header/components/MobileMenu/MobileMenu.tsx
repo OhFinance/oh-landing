@@ -11,13 +11,14 @@ import {
   Flex,
   IconButton,
   MEDIUM_URL,
+  OH_LOGO_URL,
   PITCH_DECK_URL,
   TWITTER_URL,
 } from "@ohfinance/oh-ui";
 import { Fragment, useState } from "react";
-import { FaBars, FaMediumM, FaTwitter } from "react-icons/fa";
-import OhLogo from "assets/img/oh-logo-color.png";
+import { FaMediumM, FaTwitter } from "react-icons/fa";
 import { MobileMenuItem } from "./components/MobileMenuItem";
+import MenuIcon from "@material-ui/icons/Menu";
 
 export const MobileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -25,14 +26,14 @@ export const MobileMenu = () => {
   return (
     <Fragment>
       <IconButton onClick={() => setOpen(true)}>
-        <FaBars />
+        <MenuIcon />
       </IconButton>
       <Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
         <Flex column justify="space-between" grow>
           <Box p={2}>
             <Flex center>
               <img
-                src={OhLogo}
+                src={OH_LOGO_URL}
                 alt="oh-finance-logo"
                 width={64}
                 height="auto"
