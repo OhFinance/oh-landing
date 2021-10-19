@@ -2,17 +2,20 @@ import { Box, Button, Container, Grid } from "@material-ui/core";
 import {
   Display,
   Flex,
-  IconButton,
-  MEDIUM_URL,
   PITCH_DECK_URL,
   Subtitle,
   Title,
-  TWITTER_URL,
+  TwitterButton,
+  TelegramButton,
+  MediumButton,
+  APP_URL,
 } from "@ohfinance/oh-ui";
 import { AppBrand } from "components/AppBrand";
-import { FaMediumM, FaTwitter } from "react-icons/fa";
+import { isLocalhost } from "utils/misc";
 
 export const HomeDisplay = () => {
+  const dev = isLocalhost();
+
   return (
     <Display center>
       <Container maxWidth="md">
@@ -44,9 +47,9 @@ export const HomeDisplay = () => {
                 color="primary"
                 size="large"
                 target="_blank"
-                href={PITCH_DECK_URL}
+                href={dev ? APP_URL : PITCH_DECK_URL}
               >
-                Learn More
+                {dev ? "Launch App" : "Learn More"}
               </Button>
             </Grid>
           </Grid>
@@ -54,14 +57,13 @@ export const HomeDisplay = () => {
 
         <Grid container spacing={2} justify="center">
           <Grid item>
-            <IconButton href={TWITTER_URL}>
-              <FaTwitter size="32px" />
-            </IconButton>
+            <TelegramButton />
           </Grid>
           <Grid item>
-            <IconButton href={MEDIUM_URL}>
-              <FaMediumM size="32px" />
-            </IconButton>
+            <TwitterButton />
+          </Grid>
+          <Grid item>
+            <MediumButton />
           </Grid>
         </Grid>
       </Container>

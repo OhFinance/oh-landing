@@ -1,7 +1,7 @@
 import { Container, makeStyles } from "@material-ui/core";
 import { Display } from "@ohfinance/oh-ui";
 import { Footer } from "components/Footer";
-import { Header } from "components/Header";
+import { AppBar } from "components/AppBar";
 import { Particles } from "components/Particles";
 import { FC } from "react";
 
@@ -19,7 +19,7 @@ export const AppContainer: FC = ({ children }) => {
       <Particles />
 
       <Display className={classes.display}>
-        <Header />
+        <AppBar />
         {children}
         <Footer />
       </Display>
