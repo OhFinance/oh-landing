@@ -38,12 +38,14 @@ export const AppBar = () => {
                 </IconButton>
               )}
               <Link href="/">
-                <img
-                  src={OH_TITLE_URL}
-                  alt="oh-logo"
-                  height={24}
-                  width="auto"
-                />
+                <Flex center>
+                  <img
+                    src={OH_TITLE_URL}
+                    alt="oh-logo"
+                    height={24}
+                    width="auto"
+                  />
+                </Flex>
               </Link>
             </Flex>
           </Grid>

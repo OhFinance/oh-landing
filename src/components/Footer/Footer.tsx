@@ -5,15 +5,12 @@ import {
   MediumButton,
   OH_LOGO_DARK_URL,
   TelegramButton,
-  Text,
   TwitterButton,
 } from "@ohfinance/oh-ui";
 import { useMobile } from "@ohfinance/oh-ui";
 
 const useStyles = makeStyles((theme) => ({
   image: {
-    height: 18,
-    width: "auto",
     opacity: 0.55,
   },
 }));
@@ -38,6 +35,8 @@ export const Footer = () => {
                   <img
                     src={OH_LOGO_DARK_URL}
                     alt="oh-logo"
+                    height={22}
+                    width="auto"
                     className={classes.image}
                   />
                 </Flex>
