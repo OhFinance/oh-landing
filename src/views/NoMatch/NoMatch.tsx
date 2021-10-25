@@ -13,7 +13,9 @@ export const NoMatch = () => {
         <AppBrand />
       </Flex>
 
-      <Heading align="center">Page Not Found</Heading>
+      <Heading align="center" gutterBottom>
+        Page Not Found
+      </Heading>
 
       <Button
         variant="contained"

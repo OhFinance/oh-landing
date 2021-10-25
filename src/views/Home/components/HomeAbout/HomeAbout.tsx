@@ -30,7 +30,7 @@ export const HomeAbout = () => {
                 </Box>
               </b>
             </Heading>
-            <Subtitle align={mobile ? "center" : "left"}>
+            <Subtitle align={mobile ? "center" : "left"} paragraph>
               Oh! Finance aggregates popular DeFi investment strategies and
               automatically compounds your earnings.
             </Subtitle>

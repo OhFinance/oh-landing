@@ -22,7 +22,7 @@ export const HomeDisplay = () => {
         <Flex center my={2}>
           <AppBrand />
         </Flex>
-        <Title align="center">
+        <Title align="center" gutterBottom>
           <b>
             Do{" "}
             <Box component="span" color="secondary.main">
@@ -31,7 +31,7 @@ export const HomeDisplay = () => {
             with your DeFi Dollar
           </b>
         </Title>
-        <Subtitle align="center">
+        <Subtitle align="center" paragraph>
           Oh! Finance is an optimized yield-generation protocol, focused on
           reducing risk and increasing volume exposure. Start earning{" "}
           <Box component="span" color="secondary.main">

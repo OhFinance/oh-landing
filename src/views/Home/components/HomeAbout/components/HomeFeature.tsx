@@ -19,7 +19,7 @@ export const HomeFeature: React.FC<HomeFeatureProps> = ({
       <Box mb={2}>
         <img src={img} alt={alt} width="100px" height="auto" />
       </Box>
-      <Subheading>
+      <Subheading gutterBottom>
         <b>{title}</b>
       </Subheading>
       <Text align="center">{subtitle}</Text>

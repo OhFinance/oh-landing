@@ -23,7 +23,7 @@ export const Terms = () => {
           this Agreement in its entirety. If you do not agree, you are not
           authorized to access or use the Interface.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>1. Modification of this Agreement</b>
         </Heading>
         <Paragraph>
@@ -40,7 +40,7 @@ export const Terms = () => {
           modifications to this Agreement, you must immediately stop accessing
           and using the Interface.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>2. Eligibility</b>
         </Heading>
         <Paragraph>
@@ -58,7 +58,7 @@ export const Terms = () => {
           regulations, and that you will not access or use the Interface to
           conduct, promote, or otherwise facilitate any illegal activity.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>3. Proprietary Rights</b>
         </Heading>
         <Paragraph>
@@ -77,7 +77,7 @@ export const Terms = () => {
           of open-source software running on the public Ethereum blockchain and
           is not our proprietary property.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>4. Privacy</b>
         </Heading>
         <Paragraph>
@@ -94,7 +94,7 @@ export const Terms = () => {
           and using the Interface, you understand and consent to our collection,
           use, and disclosure of your PII and aggregate data.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>5. Prohibited Activity</b>
         </Heading>
         <Paragraph>
@@ -159,7 +159,7 @@ export const Terms = () => {
             </li>
           </ul>
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>6. No Professional Advice</b>
         </Heading>
         <Paragraph>
@@ -179,7 +179,7 @@ export const Terms = () => {
           are not acting as an investment adviser or commodity trading adviser
           to any person.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>7. No Warranties</b>
         </Heading>
         <Paragraph>
@@ -199,7 +199,7 @@ export const Terms = () => {
           any advertisements, offers, or statements made by third parties
           concerning the Interface.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>8. No Fiduciary Duties</b>
         </Heading>
         <Paragraph>
@@ -212,7 +212,7 @@ export const Terms = () => {
           You further agree that the only duties and obligations that we owe you
           are those set out expressly in this Agreement.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>9. Compliance Obligations</b>
         </Heading>
         <Paragraph>
@@ -232,7 +232,7 @@ export const Terms = () => {
           through use of the Interface or the Protocol and any and all other
           taxes which may apply to you.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>10. Assumption of Risk</b>
         </Heading>
         <Paragraph>
@@ -283,7 +283,7 @@ export const Terms = () => {
           and agree to assume full responsibility for all of the risks of
           accessing and using the Interface and interacting with the Protocol.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>11. Third-Party Resources and Promotions</b>
         </Heading>
         <Paragraph>
@@ -309,7 +309,7 @@ export const Terms = () => {
           Protocol in a manner that violates any license hereunder or any other
           Open-Source Licenses.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>12. Release of Claims</b>
         </Heading>
         <Paragraph>
@@ -326,7 +326,7 @@ export const Terms = () => {
           would have materially affected his or her settlement with the debtor
           or released party.”
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>13. Indemnity</b>
         </Heading>
         <Paragraph>
@@ -341,7 +341,7 @@ export const Terms = () => {
           party’s access and use of the Interface with your assistance or using
           any device or account that you own or control.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>14. Limitation of Liability</b>
         </Heading>
         <Paragraph>
@@ -382,7 +382,7 @@ export const Terms = () => {
           to you. This limitation of liability shall apply to the fullest extent
           permitted by law.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>15. Dispute Resolution</b>
         </Heading>
         <Paragraph>
@@ -391,7 +391,7 @@ export const Terms = () => {
           must contact us by sending an email to info@oh.finance so that we can
           attempt to resolve it.
         </Paragraph>
-        <Heading>
+        <Heading gutterBottom>
           <b>16. Class Action and Jury Trial Waiver</b>
         </Heading>
         <Paragraph>

@@ -25,7 +25,7 @@ export const HomeStrategy = () => {
           </Flex>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Title align={mobile ? "center" : "left"}>
+          <Title align={mobile ? "center" : "left"} gutterBottom>
             <b>
               DeFi Done{" "}
               <Box component="span" color="secondary.main">
@@ -33,7 +33,7 @@ export const HomeStrategy = () => {
               </Box>
             </b>
           </Title>
-          <Subtitle align={mobile ? "center" : "left"}>
+          <Subtitle align={mobile ? "center" : "left"} paragraph>
             Volume across DeFi markets is not consistent, it moves according to
             market conditions and underlying funding. Risk is not consistent
             either, as protocols can accomplish similar results with different

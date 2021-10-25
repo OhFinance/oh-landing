@@ -21,7 +21,7 @@ export const HomeFlywheel = () => {
         spacing={4}
       >
         <Grid item xs={12} md={8}>
-          <Title align="center">
+          <Title align="center" gutterBottom>
             <b>
               DeFi Designed{" "}
               <Box component="span" color="secondary.main">
@@ -29,7 +29,7 @@ export const HomeFlywheel = () => {
               </Box>
             </b>
           </Title>
-          <Subtitle align="center">
+          <Subtitle align="center" paragraph>
             Users deposit funds to earn APY and get rewarded with Oh! Finance
             Governance Tokens. As a result, the protocol earns more revenue on
             investment strategies. Protocol revenue is then used to buyback and
