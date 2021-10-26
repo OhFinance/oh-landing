@@ -47,9 +47,9 @@ export const HomeDisplay = () => {
                 color="primary"
                 size="large"
                 target="_blank"
-                href={dev ? APP_URL : PITCH_DECK_URL}
+                href={APP_URL}
               >
-                {dev ? "Launch App" : "Learn More"}
+                Launch App
               </Button>
             </Grid>
           </Grid>
